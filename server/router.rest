@@ -1,0 +1,8 @@
+POST http://localhost:4000/userIssue/createUserIssue
+Content-Type: application/json
+
+{
+    "firstName": "John"
+}
+
+//GET http://localhost:4000/userIssue/getUserIssues
