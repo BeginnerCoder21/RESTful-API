@@ -4,7 +4,7 @@ const app = express();
 const port= 4000;
 
 const mongoose=require("mongoose");
-mongoose.connect('mongodb+srv://Issue:9Anushka219@cluster0.yodvb.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.yodvb.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 //mongoose.connect('mongodb+srv://Issue:9Anushka219@cluster0.yodvb.mongodb.net/?retryWrites=true&w=majority');
 const db=mongoose.connection;
 db.on("error",console.error.bind(console,"connection error: "));
